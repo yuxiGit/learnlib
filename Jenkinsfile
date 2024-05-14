@@ -1,4 +1,4 @@
-@Library('first-lib') _
+@Library('sec-lib') _
 
 pipeline {
     agent {
