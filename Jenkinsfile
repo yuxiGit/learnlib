@@ -39,7 +39,9 @@ pipeline {
                 stage('a') {
                     steps {
                         echo 'a'
-                        otherTools.PrintMsg("this is sharelib")
+                        script {
+                            otherTools.PrintMsg("this is sharelib")
+                        }    
                     }
                 }
                 stage('b') {
