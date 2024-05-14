@@ -1,3 +1,5 @@
+@Library('first-lib') _
+
 pipeline {
     agent {
         node {
@@ -37,6 +39,7 @@ pipeline {
                 stage('a') {
                     steps {
                         echo 'a'
+                        tools.PrintMes("this is sharelib", "red")
                     }
                 }
                 stage('b') {
