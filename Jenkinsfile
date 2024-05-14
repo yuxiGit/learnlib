@@ -1,4 +1,4 @@
-@Library('sec-lib') _
+@Library('first-lib') _
 
 pipeline {
     agent {
@@ -40,7 +40,7 @@ pipeline {
                     steps {
                         echo 'a'
                         script {
-                            otherTools.PrintMsg("this is sharelib")
+                            tools.PrintMes("this is sharelib", "red")
                         }    
                     }
                 }
