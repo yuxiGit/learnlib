@@ -1,5 +1,5 @@
 @Library('first-lib') _
-
+def tools = new org.dev.tools()
 pipeline {
     agent {
         node {
